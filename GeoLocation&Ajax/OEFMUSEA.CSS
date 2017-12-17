@@ -1,0 +1,55 @@
+body {
+    margin: 25px;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+div#brussel,
+div#antwerpen {
+    width: 48%;
+    float: left;
+}
+
+div#brussel::after {
+    clear: both;
+}
+
+div#antwerpen {
+    margin-right: 4%;
+}
+
+#map_bru,
+#map_antw {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+}
+
+#buttons {}
+
+#btn_refresh,
+#btn_vorig,
+#btn_volgend {}
+
+div#map_bru,
+div#map_antw {
+    margin: 5px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+td,
+th {
+    padding: 0px 15px;
+}
+
+th {
+    text-align: left;
+}
+
+div#brussel {
+    margin-bottom: 30px;
+}

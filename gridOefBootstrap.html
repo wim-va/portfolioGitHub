@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Grid on Pictures</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        body {
+            padding-top: 70px;
+        }
+
+        .jumbotron {
+            color: #2c3e50;
+            /* background-color: #ecf0f1; */
+        }
+
+        .navbar-inverse {
+            background-color: #2c3e50;
+        }
+
+        .navbar-inverse .navbar-nav>li>a,
+        .navbar-inverse .navbar-brand {
+            color: white;
+        }
+
+        .glyphicon-sunglasses {
+            color: paleturquoise;
+            font-size: 2hem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- <div class="container-fluid"> difference?? -fluid probeert meer breedte te pakken? -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMGS</a>
+                <!-- glyphicon glyphicon-picture -->
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="#">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <!-- <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> -->
+            <h1>
+                <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>The Image Gallery</h1>
+            <p>Some random sub line</p>
+        </div>
+        <!-- <div class="row">
+            <div class="col-lg-4 col-sm-6 image">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1496264057429-6a331647b69e" alt="damn">
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 image">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1496264057429-6a331647b69e" alt="damn">
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 image">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1496264057429-6a331647b69e" alt="damn">
+                </div>
+            </div>
+        </div> -->
+        <div class="row flex">
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <!-- <img src="https://images.unsplash.com/photo-1500835176302-48dbd01f6437" alt="nope"> -->
+                    <img src="https://images.unsplash.com/photo-1483356256511-b48749959172" alt="damn">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <!-- <img src="https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347" alt="nope"> -->
+                    <img src="https://images.unsplash.com/photo-1505789969044-d6ce1f79949f" alt="sunset">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1486758206125-94d07f414b1c" alt="nope">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1496264057429-6a331647b69e" alt="nope">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1484151709479-3996843263cf" alt="nope">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="https://images.unsplash.com/photo-1506155475929-a146afddd515" alt="nope">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://source.unsplash.com/UfCYo7zHyY8" alt="nope">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://source.unsplash.com/NuE8Nu3otjo" alt="nope">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <img src="http://source.unsplash.com/m94kn8Rp61Q" alt="nope">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
